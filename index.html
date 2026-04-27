@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>SecurePass Analyzer Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>SecurePass Analyzer Pro</h1>
+
+
+<input
+type="password"
+id="password"
+placeholder="Enter or generate password">
+
+
+<br>
+
+
+<label>Password Length:</label>
+
+<input
+type="number"
+id="length"
+value="12"
+min="8"
+max="20">
+
+
+<br><br>
+
+
+<label>
+<input type="checkbox" id="uppercase" checked>
+Uppercase
+</label>
+
+
+<label>
+<input type="checkbox" id="numbers" checked>
+Numbers
+</label>
+
+
+<label>
+<input type="checkbox" id="symbols" checked>
+Symbols
+</label>
+
+
+<br><br>
+
+
+<button onclick="generatePassword()">
+Generate
+</button>
+
+
+<button onclick="analyzePassword()">
+Analyze
+</button>
+
+
+<button onclick="copyPassword()">
+Copy
+</button>
+
+
+<button onclick="togglePassword()">
+Show/Hide
+</button>
+
+
+
+<div id="meter">
+<div id="bar"></div>
+</div>
+
+
+<h3 id="strength"></h3>
+
+
+<p id="breach"></p>
+
+
+<p id="entropy"></p>
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
